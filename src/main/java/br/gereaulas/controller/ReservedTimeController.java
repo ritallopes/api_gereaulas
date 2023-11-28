@@ -5,6 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import br.gereaulas.model.ClassSchedule;
 import br.gereaulas.model.ReservedTime;
 import br.gereaulas.repository.ReservedTimeRepository;
 
@@ -36,6 +37,25 @@ public class ReservedTimeController {
 
         if (reservedTime != null) {
             return ResponseEntity.ok(reservedTime);
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+    }
+    
+    @GetMapping("/teacher/{tId}")
+    public ResponseEntity<Iterable<ReservedTime>> getByTeacherId(@PathVariable Long tId) {
+    	Iterable<ReservedTime> reservedTimes = reservedTimeRepository.findByTeacherId(tId);
+        
+            return ResponseEntity.ok(reservedTimes);
+
+    }
+    
+    @DeleteMapping("/{reservedTimeId}")
+    public ResponseEntity<Boolean> delete(@PathVariable Long reservedTimeId) {
+        reservedTimeRepository.deleteById(reservedTimeId);
+
+        if (reservedTimeRepository.findById(reservedTimeId) == null) {
+            return ResponseEntity.ok(true);
         } else {
             return ResponseEntity.notFound().build();
         }

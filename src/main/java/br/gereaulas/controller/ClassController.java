@@ -3,6 +3,7 @@ package br.gereaulas.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -34,7 +35,6 @@ public class ClassController {
     @PostMapping
     public ResponseEntity<ClassSchedule> createClassSchedule(@RequestBody ClassSchedule newClassSchedule) {
         // TODO: Adicionar lógica para validar e processar o novo agendamento
-    	System.out.println(newClassSchedule.toString());
         ClassSchedule savedClassSchedule = repository.save(newClassSchedule);
         return new ResponseEntity<>(savedClassSchedule, HttpStatus.CREATED);
     }
@@ -59,6 +59,14 @@ public class ClassController {
         Iterable<ClassSchedule> classSchedules = repository.findByTeacherId(teacherId);
 
         return ResponseEntity.ok(classSchedules);
+    }
+    
+    // GET para obter um agendamento de aula pelo ID do professor
+    @DeleteMapping("/{idClass}")
+    public ResponseEntity<Boolean> delete(@PathVariable Long idClass) {
+        repository.deleteById(idClass);
+
+        return ResponseEntity.ok(repository.findById(idClass) == null);
     }
 
 }

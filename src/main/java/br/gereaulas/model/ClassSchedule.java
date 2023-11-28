@@ -25,7 +25,7 @@ public class ClassSchedule {
 		this.id = id;
 	}
 
-	@ManyToOne(cascade = {CascadeType.MERGE})
+	@ManyToOne(cascade = {CascadeType.MERGE, CascadeType.PERSIST})
     @JoinColumn(name = "idTime")
     ReservedTime time;
     @ManyToOne(cascade = {CascadeType.MERGE})

@@ -33,7 +33,6 @@ public class TeacherController {
 	// POST para criar um usuário
 	@PostMapping
 	public ResponseEntity<Teacher> createTeachers(@RequestBody Teacher newTeacher) {
-		System.out.println(newTeacher.toString());
 		List<Teacher> otherUser = repository.findByEmail(newTeacher.getEmail());
 		// TODO testar
 		if (otherUser.size() > 0) {
