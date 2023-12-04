@@ -38,8 +38,17 @@ public class Student {
     @JoinColumn(name = "idResponsible")
     Responsible responsible;
     String address;
+    String image_profile;
 
-    public Student(String email, String name, String contato, LocalDate dateBirth, Responsible responsible,
+    public String getImage_profile() {
+		return image_profile;
+	}
+
+	public void setImage_profile(String image_profile) {
+		this.image_profile = image_profile;
+	}
+
+	public Student(String email, String name, String contato, LocalDate dateBirth, Responsible responsible,
             String address) {
         this.email = email;
         this.name = name;

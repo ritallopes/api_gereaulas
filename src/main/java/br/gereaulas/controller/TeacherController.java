@@ -34,6 +34,7 @@ public class TeacherController {
 	@PostMapping
 	public ResponseEntity<Teacher> createTeachers(@RequestBody Teacher newTeacher) {
 		List<Teacher> otherUser = repository.findByEmail(newTeacher.getEmail());
+		System.out.println(newTeacher.getImageProfile());
 		// TODO testar
 		if (otherUser.size() > 0) {
 			return ResponseEntity.unprocessableEntity().build();

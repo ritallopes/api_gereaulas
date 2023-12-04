@@ -25,7 +25,7 @@ public class ClassSchedule {
 		this.id = id;
 	}
 
-	@ManyToOne(cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+	@ManyToOne(cascade = {CascadeType.MERGE})
     @JoinColumn(name = "idTime")
     ReservedTime time;
     @ManyToOne(cascade = {CascadeType.MERGE})
@@ -38,14 +38,23 @@ public class ClassSchedule {
     double paymentAmount;
     String subject;
     String status;
+    String address;
 
-    @Id
+    public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	@Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "CLASS_ID")
     @SequenceGenerator(name = "CLASS_ID", sequenceName = "id_seq_class", allocationSize = 1)
     private Long id;
 
     public ClassSchedule(ReservedTime time, Student student, Teacher teacher, boolean residential, double paymentAmount,
-            String subject, String status) {
+            String subject, String status, String address) {
         this.time = time;
         this.student = student;
         this.teacher = teacher;
@@ -53,7 +62,7 @@ public class ClassSchedule {
         this.paymentAmount = paymentAmount;
         this.subject = subject;
         this.status = status;
-    }
+        this.address=address;    }
 
     public ReservedTime getTime() {
         return time;
@@ -79,7 +88,14 @@ public class ClassSchedule {
         this.teacher = teacher;
     }
 
-    public boolean isResidential() {
+    @Override
+	public String toString() {
+		return "ClassSchedule [time=" + time + ", student=" + student + ", teacher=" + teacher + ", residential="
+				+ residential + ", paymentAmount=" + paymentAmount + ", subject=" + subject + ", status=" + status
+				+ ", address=" + address + ", id=" + id + "]";
+	}
+
+	public boolean isResidential() {
         return residential;
     }
 
