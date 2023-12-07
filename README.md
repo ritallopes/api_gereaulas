@@ -17,9 +17,6 @@ Um aplicativo capaz de organizar, gerenciar e facilitar o dia a dia de professor
 Um aplicativo capaz de organizar, gerenciar e facilitar o dia a dia de professores de aulas particulares, também beneficiando alunos e seus responsáveis ao centralizar num único lugar as informações sobre as aulas.
 Para a disciplina de Desenvolvimento Web II, a proposta é de criação de uma Rest API. 
 
-## Como Usar
-
-
 ### Pré-requisitos
 
 Este projeto usa [PostgreSQL](https://www.postgresql.org/), então se você quiser executar localmente vai precisar ter instalado ou, sugiro, usar Docker.   
@@ -43,6 +40,13 @@ Execute o seguinte comando para compilar o projeto:
 
 Após a conclusão da compilação, execute o aplicativo Spring Boot com o seguinte comando:
 ```mvn spring-boot:run```
+
+#### Acesso à API:
+
+Acesse a API no navegador ou em uma ferramenta de teste de API. Por padrão, a aplicação estará disponível em http://localhost:8081
+
+#### Observações:
+Certifique-se de que as dependências do banco de dados PostgreSQL estejam configuradas corretamente no arquivo application.properties ou application.yml do seu projeto.
 
 ## Contribuição
 
