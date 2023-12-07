@@ -49,8 +49,8 @@ Certifique-se de que as dependências do banco de dados PostgreSQL estejam confi
 
 ## Contribuição
 
-[![Rita de Cássia Lino Lopes](https://avatars.githubusercontent.com/u/41452534?v=4)](https://github.com/ritallopes){:height="50%" width="50%"}
+[![Rita de Cássia Lino Lopes](https://avatars.githubusercontent.com/u/41452534?v=4)](https://github.com/ritallopes)
 
 ## Contato
 
-[![LinkedIn: Rita Lopes](https://media.licdn.com/dms/image/D4D03AQFLOH64ibOQJQ/profile-displayphoto-shrink_400_400/0/1689729681995?e=1707350400&v=beta&t=-CGUcTjxRWUgfEj5xXDqK5BC9wweRLXDd_OKaL6UnQI)](https://www.linkedin.com/in/ritallopes/){:height="50%" width="50%"}
+[![LinkedIn: Rita Lopes](https://media.licdn.com/dms/image/D4D03AQFLOH64ibOQJQ/profile-displayphoto-shrink_400_400/0/1689729681995?e=1707350400&v=beta&t=-CGUcTjxRWUgfEj5xXDqK5BC9wweRLXDd_OKaL6UnQI)](https://www.linkedin.com/in/ritallopes/)
