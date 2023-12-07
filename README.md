@@ -13,7 +13,8 @@ Um aplicativo capaz de organizar, gerenciar e facilitar o dia a dia de professor
 ## Visão Geral
 
 Um aplicativo capaz de organizar, gerenciar e facilitar o dia a dia de professores de aulas particulares, também beneficiando alunos e seus responsáveis ao centralizar num único lugar as informações sobre as aulas.
-Para a disciplina de Desenvolvimento Web II, a proposta é de criação de uma Rest API, que está disponível em ```https://api-gereaulas.onrender.com```
+Neste repositório, a proposta é de criação de uma Rest API, que está disponível em https://api-gereaulas.onrender.com
+Mas acessando outro repositório contendo o código da aplicação mobile você pode acessar: https://github.com/ritallopes/gereaulas_mobile
 
 ### Pré-requisitos
 
