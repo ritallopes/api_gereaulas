@@ -7,10 +7,8 @@ Um aplicativo capaz de organizar, gerenciar e facilitar o dia a dia de professor
 2. [Como Usar](#como-usar)
    - [Pré-requisitos](#pré-requisitos)
    - [Instalação](#instalação)
-   - [Exemplos de Uso](#exemplos-de-uso)
 3. [Contribuição](#contribuição)
-4. [Licença](#licença)
-5. [Contato](#contato)
+4. [Contato](#contato)
 
 ## Visão Geral
 
@@ -51,10 +49,6 @@ Certifique-se de que as dependências do banco de dados PostgreSQL estejam confi
 ## Contribuição
 
 [![Rita de Cássia Lino Lopes](https://avatars.githubusercontent.com/u/41452534?v=4)](https://github.com/ritallopes)
-
-
-## Licença
-
 
 ## Contato
 
