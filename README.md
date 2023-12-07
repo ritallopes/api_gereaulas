@@ -22,13 +22,27 @@ Para a disciplina de Desenvolvimento Web II, a proposta é de criação de uma R
 
 ### Pré-requisitos
 
-Este projeto usa [PostgreSQL](https://www.postgresql.org/), então se você quiser executar localmente vai precisar ter instalado ou, sugiro, usar Docker.
+Este projeto usa [PostgreSQL](https://www.postgresql.org/), então se você quiser executar localmente vai precisar ter instalado ou, sugiro, usar Docker.   
+JDK 17 instalado: Certifique-se de ter o Java Development Kit (JDK) 17 instalado em seu sistema.   
+Maven instalado: Certifique-se de ter o Maven instalado em seu sistema.   
 
 ### Instalação
+#### Clonar ou Baixar o Projeto:
 
+Clone o projeto do repositório ou faça o download do código-fonte em um arquivo zip.
+Navegar até o Diretório do Projeto:
 
-### Exemplos de Uso
+Abra um terminal ou prompt de comando e navegue até o diretório onde o projeto foi clonado ou descompactado.
 
+#### Compilar o Projeto:
+
+Execute o seguinte comando para compilar o projeto:
+```mvn clean install```
+
+#### Executar o Projeto:
+
+Após a conclusão da compilação, execute o aplicativo Spring Boot com o seguinte comando:
+```mvn spring-boot:run```
 
 ## Contribuição
 
